@@ -1,2 +1,7 @@
+# Kompilierte Dateien aus den bin und obj Ordnern
 bin/
 obj/
+
+# Automatisch generierte VSCode-Dateien
+.vs/
+.vscode/*
