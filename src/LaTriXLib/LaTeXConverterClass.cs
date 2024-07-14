@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using MathNet.Numerics.LinearAlgebra;
 
 namespace LaTriXLib;
@@ -29,7 +30,7 @@ public static class LaTeXConverter
             for (int j=1; j < matrix.ColumnCount; j++) // Iteration über die Spalten
             {
                 latexStringBuilder.Append('&'); // Zwischen Zeilenelementen muss ein Trennzeichen gesetzt werden
-                latexStringBuilder.Append(matrix[i,j].ToString());
+                latexStringBuilder.Append(matrix[i,j].ToString("G", CultureInfo.InvariantCulture)); // InvariantCulture erzwingt hier einen Dezimalpunkt!
             }
             latexStringBuilder.AppendLine(@"\\"); // Zeile beendet, setze LaTeX-Linebreak (\\) und Datei-Linebreak (\n)
         }
