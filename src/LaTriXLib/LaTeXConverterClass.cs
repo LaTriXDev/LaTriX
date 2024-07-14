@@ -9,6 +9,10 @@ public static class LaTeXConverter
     {
         left, center, right
     }
+    public enum VectorType
+    {
+        column, row
+    }
 
     public static string ConvertMatrixToLaTeX<T>(Matrix<T> matrix, Alignment alignment=Alignment.center) where T : struct, IEquatable<T>, IFormattable
     /* Die Einschränkung des Typparameters T auf ein struct, das IEquatable<T> und IFormattable implementiert, ist wegen
