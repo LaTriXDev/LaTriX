@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1D117ACB-05DF-425E-A201-FE1A095DE6C1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaTriXLib", "src\LaTriXLib\LaTriXLib.csproj", "{4B29F1BF-8324-4846-9282-09568B0192ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaTriXLib", "LaTriXLib\LaTriXLib.csproj", "{4B29F1BF-8324-4846-9282-09568B0192ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTriXLibTests", "LaTriXLibTests\LaTriXLibTests.csproj", "{C40B001F-B61F-40C4-8EF4-503239C6A976}"
 EndProject
