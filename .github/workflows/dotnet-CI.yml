@@ -1,27 +1,31 @@
-name: .NET Framework CI
-#für alle Push und pull-request auf dem Branch main.
+name: Build and Test
+#für jeden Push und pull request auf main 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
-#Die Aufgaben 
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: windows-latest
-
+# checkout 
     steps:
-    # Check out the repository
-    - uses: actions/checkout@v4
-
-    # Set up MSBuild
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.1
-
-    # Restore dependencies
+    - name: Checkout code
+      uses: actions/checkout@v4
+ # .NET Setup 
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4.0.1
+      with:
+        dotnet-version: '8.0.x'
+# Restore
     - name: Restore dependencies
-      run: nuget restore # DATEIN.sln --> # Hier beim DATEI.sln sollte den Pfad zum .sln Datei
-
-    # Build and Test
-    - name: Build and Test
-      run: msbuild #DATEI.sln /p:Configuration=Release /p:RunCodeAnalysis=true --> # Hier beim DATEI.sln sollte den Pfad zum .sln Datei 
+      run: dotnet restore
+# Build
+    - name: Build
+      run: dotnet build --no-restore
+# Testen
+    - name: Run tests
+      run: dotnet test --no-restore --verbosity normal
