@@ -1,6 +1,6 @@
 namespace LaTriXLibTests;
 
-public class UnitTest1
+public class TestLaTeXConverter
 {
     [Fact]
     public void Test1()
