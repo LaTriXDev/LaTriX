@@ -37,6 +37,25 @@ public static class LaTeXConverter
         return latexStringBuilder.ToString();
     }
 
+    public static string ConvertVectorToLaTeX<T>(Vector<T> vector, Alignment alignment=Alignment.center, VectorType vector_type=VectorType.column)
+    where T : struct, IEquatable<T>, IFormattable
+    {
+        Matrix<T> vector_as_matrix;
+        switch (vector_type) // Konvertiert in diesem Switch den Vektor in eine einzeilige/einspaltige Matrix, je nach angegebenem VectorType.
+        {
+            case VectorType.column:
+                vector_as_matrix = vector.ToColumnMatrix();
+                break;
+            case VectorType.row:
+                vector_as_matrix = vector.ToRowMatrix();
+                break;
+            default:
+                vector_as_matrix = vector.ToColumnMatrix();
+                break;
+        }
+        return ConvertMatrixToLaTeX(vector_as_matrix, alignment); // Rückführung auf den Matrix-Fall.
+    }
+
     private static char GetAlignmentChar(Alignment alignment) // Konvertiert ein Alignment in den LaTeX-Specifier (l, c oder r)
     {
         switch (alignment)
