@@ -26,7 +26,7 @@ public static class LaTeXConverter
         for (int i=0; i < matrix.RowCount; i++) // Iteration über die Reihen
         {
             latexStringBuilder.Append(matrix[i,0].ToString()); // Vor das erste Element darf kein & gesetzt werden, deswegen Extrabehandlung!
-            for (int j=0; j < matrix.ColumnCount; j++) // Iteration über die Spalten
+            for (int j=1; j < matrix.ColumnCount; j++) // Iteration über die Spalten
             {
                 latexStringBuilder.Append('&'); // Zwischen Zeilenelementen muss ein Trennzeichen gesetzt werden
                 latexStringBuilder.Append(matrix[i,j].ToString());
