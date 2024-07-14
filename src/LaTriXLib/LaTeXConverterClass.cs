@@ -22,7 +22,7 @@ public static class LaTeXConverter
         StringBuilder latexStringBuilder = new StringBuilder(@"\left( \begin{array}{"); // Overhead, der die Matrix initialisiert
         char alignment_char = GetAlignmentChar(alignment);
         latexStringBuilder.Append(new string(alignment_char, matrix.ColumnCount)); // Formatspecifier der Matrix (linksbündig, rechtsbündig oder zentriert)
-        latexStringBuilder.Append(@"}\n");
+        latexStringBuilder.AppendLine(@"}");
         for (int i=0; i < matrix.RowCount; i++) // Iteration über die Reihen
         {
             latexStringBuilder.Append(matrix[i,0].ToString()); // Vor das erste Element darf kein & gesetzt werden, deswegen Extrabehandlung!
@@ -31,7 +31,7 @@ public static class LaTeXConverter
                 latexStringBuilder.Append('&'); // Zwischen Zeilenelementen muss ein Trennzeichen gesetzt werden
                 latexStringBuilder.Append(matrix[i,j].ToString());
             }
-            latexStringBuilder.Append(@"\\\n"); // Zeile beendet, setze LaTeX-Linebreak (\\) und Datei-Linebreak (\n)
+            latexStringBuilder.AppendLine(@"\\"); // Zeile beendet, setze LaTeX-Linebreak (\\) und Datei-Linebreak (\n)
         }
         latexStringBuilder.Append(@"\end{array} \right)"); // Matrixsuffix, Gegenstück zum Overhead
         return latexStringBuilder.ToString();
