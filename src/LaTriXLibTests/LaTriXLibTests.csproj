@@ -24,4 +24,10 @@
     <ProjectReference Include="..\LaTriXLib\LaTriXLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+  <None Update="test_strings.txt">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+</ItemGroup>
+
 </Project>
