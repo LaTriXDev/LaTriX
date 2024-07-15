@@ -1,0 +1,33 @@
+\left( \begin{array}{ccccc}
+1&0&0&0&0\\
+0&1&0&0&0\\
+0&0&1&0&0\\
+0&0&0&1&0\\
+0&0&0&0&1\\
+\end{array} \right)
+
+\left( \begin{array}{cccc}
+0&0&0&0\\
+0&0.01&0.02&0.03\\
+0&0.02&0.04&0.06\\
+\end{array} \right)
+
+\left( \begin{array}{c}
+-3\\
+\end{array} \right)
+
+\left( \begin{array}{c}
+1\\
+0\\
+0\\
+0\\
+0\\
+\end{array} \right)
+
+\left( \begin{array}{ccc}
+0&0.01&0.02\\
+\end{array} \right)
+
+\left( \begin{array}{c}
+-2\\
+\end{array} \right)
