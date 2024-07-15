@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '8.0.x'
 # Restore
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src
 # Build
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build src --no-restore 
 # Testen
     - name: Run tests
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test src --no-restore --verbosity normal
