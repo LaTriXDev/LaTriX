@@ -64,6 +64,35 @@ public static class LaTeXConverter
         return latexStringBuilder.ToString();
     }
 
+    /// <summary>
+    /// Konvertiert den übergebenen Vektor <paramref name="vector"/> in einen LaTeX-Code, der diesen anzeigen kann.
+    /// </summary>
+    /// <typeparam name="T">Ein Datentyp, aus dem ein MathNet.Numerics.LinearAlgebra.Vector gebaut werden kann
+    /// (Double, Single, Complex, Complex32).</typeparam>
+    /// <param name="vector">Der zu konvertierende Vektor.</param>
+    /// <param name="alignment">Anordnung der Vektorelemente. Eines von LaTeXConverter.Alignment.center (zentriert),
+    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig). Standardmäßig
+    /// LaTeXConverter.Alignment.center.</param>
+    /// <param name="vector_type">Gibt an, ob der Vektor als Spalten- oder Zeilenvektor interpretiert werden soll.
+    /// Eines von LaTeXConverter.VectorType.column oder LaTeXConverter.VectorType.row. Standardmäßig
+    /// LaTeXConverter.VectorType.column.</param>
+    /// <returns>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um den
+    /// konvertierten Vektor anzuzeigen.</returns>
+    /// 
+    /// <remarks>
+    /// <para>
+    /// Der erzeugte LaTeX-Code besitzt keine eigene Kontrollsequenz zur Einleitung des Mathematikmodus. Der Code muss explizit im
+    /// Mathematikmodus eingefügt werden.
+    /// </para>
+    /// <para>
+    /// Aus Kompatibilitätsgründen (und da LaTeX diese ebenfalls standardmäßig als Dezimaltrennzeichen nutzt) wird als Trennzeichen
+    /// zwischen "Vorkommastellen" und "Nachkommastellen" der im englischen Sprachraum übliche Punkt genutzt.
+    /// </para>
+    /// <para>
+    /// Der erzeugte Code arbeitet mit der LaTeX-Kontrollsequenz <c>\begin{array}</c> statt <c>\begin{pmatrix}</c>, um auch ohne den Import
+    /// des amsmath-Moduls zu funktionieren.
+    /// </para>
+    /// </remarks>
     public static string ConvertVectorToLaTeX<T>(Vector<T> vector, Alignment alignment=Alignment.center, VectorType vector_type=VectorType.column)
     where T : struct, IEquatable<T>, IFormattable
     {
