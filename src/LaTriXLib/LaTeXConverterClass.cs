@@ -22,7 +22,8 @@ public static class LaTeXConverter
     /// (Double, Single, Complex, Complex32).</typeparam>
     /// <param name="matrix">Die zu konvertierende Matrix.</param>
     /// <param name="alignment">Anordnung der Matrixelemente. Eines von LaTeXConverter.Alignment.center (zentriert),
-    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig).</param>
+    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig). Standardmäßig
+    /// LaTeXConverter.Alignment.center.</param>
     /// <returns>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um die
     /// konvertierte Matrix anzuzeigen.</returns>
     /// 
