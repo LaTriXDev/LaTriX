@@ -5,8 +5,8 @@ using MathNet.Numerics.LinearAlgebra;
 namespace LaTriXLib;
 
 /// <summary>
-/// Die LaTeXConverter-Klasse.
-/// Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrizen und -Vektoren in einfügbaren
+/// Die <c>LaTeXConverter</c>-Klasse.
+/// Enthält Methoden zur Konversion von <c>MathNet.Numerics.LinearAlgebra</c>-Matrizen und -Vektoren in einfügbaren
 /// LaTeX-Code.
 /// </summary>
 /// 
@@ -21,8 +21,8 @@ public static class LaTeXConverter
     /// </summary>
     /// 
     /// <remarks>
-    /// Alignment.left steht dabei für linksbündige Ausrichtung, Alignment.right für rechtsbündige Ausrichtung sowie
-    /// Alignment.center für zentrierte Elemente.
+    /// <c>Alignment.left</c> steht dabei für linksbündige Ausrichtung, <c>Alignment.right</c> für rechtsbündige Ausrichtung sowie
+    /// <c>Alignment.center</c> für zentrierte Elemente.
     /// </remarks>
     public enum Alignment
     {
@@ -34,8 +34,8 @@ public static class LaTeXConverter
     /// </summary>
     /// 
     /// <remarks>
-    /// VectorType.column steht dafür für eine Interpretation als Spaltenvektor,
-    /// VectorType.row für eine Interpretation als Zeilenvektor.
+    /// <c>VectorType.column</c> steht dafür für eine Interpretation als Spaltenvektor,
+    /// <c>VectorType.row</c> für eine Interpretation als Zeilenvektor.
     /// </remarks>
     public enum VectorType
     {
@@ -45,12 +45,12 @@ public static class LaTeXConverter
     /// <summary>
     /// Konvertiert die übergebene Matrix <paramref name="matrix"/> in einen LaTeX-Code, der diese anzeigen kann.
     /// </summary>
-    /// <typeparam name="T">Ein Datentyp, aus dem eine MathNet.Numerics.LinearAlgebra.Matrix gebaut werden kann
+    /// <typeparam name="T">Ein Datentyp, aus dem eine <c>MathNet.Numerics.LinearAlgebra.Matrix</c> gebaut werden kann
     /// (Double, Single, Complex, Complex32).</typeparam>
     /// <param name="matrix">Die zu konvertierende Matrix.</param>
-    /// <param name="alignment">Anordnung der Matrixelemente. Eines von LaTeXConverter.Alignment.center (zentriert),
-    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig). Standardmäßig
-    /// LaTeXConverter.Alignment.center.</param>
+    /// <param name="alignment">Anordnung der Matrixelemente. Eines von <c>LaTeXConverter.Alignment.center</c> (zentriert),
+    /// <c>LaTeXConverter.Alignment.left</c> (linksbündig) oder <c>LaTeXConverter.Alignment.right</c> (rechtsbündig). Standardmäßig
+    /// <c>LaTeXConverter.Alignment.center</c>.</param>
     /// <returns>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um die
     /// konvertierte Matrix anzuzeigen.</returns>
     /// 
@@ -65,7 +65,7 @@ public static class LaTeXConverter
     /// </para>
     /// <para>
     /// Der erzeugte Code arbeitet mit der LaTeX-Kontrollsequenz <c>\begin{array}</c> statt <c>\begin{pmatrix}</c>, um auch ohne den Import
-    /// des amsmath-Moduls zu funktionieren.
+    /// des <c>amsmath</c>-Moduls zu funktionieren.
     /// </para>
     /// </remarks>
     public static string ConvertMatrixToLaTeX<T>(Matrix<T> matrix, Alignment alignment=Alignment.center) where T : struct, IEquatable<T>, IFormattable
@@ -94,15 +94,15 @@ public static class LaTeXConverter
     /// <summary>
     /// Konvertiert den übergebenen Vektor <paramref name="vector"/> in einen LaTeX-Code, der diesen anzeigen kann.
     /// </summary>
-    /// <typeparam name="T">Ein Datentyp, aus dem ein MathNet.Numerics.LinearAlgebra.Vector gebaut werden kann
+    /// <typeparam name="T">Ein Datentyp, aus dem ein <c>MathNet.Numerics.LinearAlgebra.Vector</c> gebaut werden kann
     /// (Double, Single, Complex, Complex32).</typeparam>
     /// <param name="vector">Der zu konvertierende Vektor.</param>
-    /// <param name="alignment">Anordnung der Vektorelemente. Eines von LaTeXConverter.Alignment.center (zentriert),
-    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig). Standardmäßig
-    /// LaTeXConverter.Alignment.center.</param>
+    /// <param name="alignment">Anordnung der Vektorelemente. Eines von <c>LaTeXConverter.Alignment.center</c> (zentriert),
+    /// <c>LaTeXConverter.Alignment.left</c> (linksbündig) oder <c>LaTeXConverter.Alignment.right</c> (rechtsbündig). Standardmäßig
+    /// <c>LaTeXConverter.Alignment.center</c>.</param>
     /// <param name="vector_type">Gibt an, ob der Vektor als Spalten- oder Zeilenvektor interpretiert werden soll.
-    /// Eines von LaTeXConverter.VectorType.column oder LaTeXConverter.VectorType.row. Standardmäßig
-    /// LaTeXConverter.VectorType.column.</param>
+    /// Eines von <c>LaTeXConverter.VectorType.column</c> oder <c>LaTeXConverter.VectorType.row</c>. Standardmäßig
+    /// <c>LaTeXConverter.VectorType.column</c>.</param>
     /// <returns>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um den
     /// konvertierten Vektor anzuzeigen.</returns>
     /// 
@@ -142,10 +142,10 @@ public static class LaTeXConverter
     /// <summary>
     /// Konvertiert ein Alignment in den entsprechenden LaTeX-Specifier (l, c oder r).
     /// </summary>
-    /// <param name="alignment">Eines von LaTeXConverter.Alignment.center, LaTeXConverter.Alignment.left
-    /// oder LaTeXConverter.Alignment.right.</param>
-    /// <returns>Den char 'l', falls <paramref name="alignment"/>==LaTeXConverter.Alignment.left, 'r' falls
-    /// <paramref name="alignment"/>==LaTeXConverter.Alignment.right, 'c' sonst.</returns>
+    /// <param name="alignment">Eines von <c>LaTeXConverter.Alignment.center</c>, <c>LaTeXConverter.Alignment.left</c>
+    /// oder <c>LaTeXConverter.Alignment.right</c>.</param>
+    /// <returns>Den char 'l', falls <c>alignment==LaTeXConverter.Alignment.left</c>, 'r' falls
+    /// <c>alignment==LaTeXConverter.Alignment.right</c>, 'c' sonst.</returns>
     private static char GetAlignmentChar(Alignment alignment)
     {
         switch (alignment)
