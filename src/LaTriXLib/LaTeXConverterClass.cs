@@ -6,10 +6,27 @@ namespace LaTriXLib;
 
 public static class LaTeXConverter
 {
+    /// <summary>
+    /// Ein Enum-Typ, der eine Elementanordnung innerhalb einer Matrix/eines Vektors repräsentiert.
+    /// </summary>
+    /// 
+    /// <remarks>
+    /// Alignment.left steht dabei für linksbündige Ausrichtung, Alignment.right für rechtsbündige Ausrichtung sowie
+    /// Alignment.center für zentrierte Elemente.
+    /// </remarks>
     public enum Alignment
     {
         left, center, right
     }
+
+    /// <summary>
+    /// Ein Enum-Typ, der eine Typinterpretation eines Vektors repräsentiert.
+    /// </summary>
+    /// 
+    /// <remarks>
+    /// VectorType.column steht dafür für eine Interpretation als Spaltenvektor,
+    /// VectorType.row für eine Interpretation als Zeilenvektor.
+    /// </remarks>
     public enum VectorType
     {
         column, row
