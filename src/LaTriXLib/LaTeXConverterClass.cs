@@ -112,7 +112,14 @@ public static class LaTeXConverter
         return ConvertMatrixToLaTeX(vector_as_matrix, alignment); // Rückführung auf den Matrix-Fall.
     }
 
-    private static char GetAlignmentChar(Alignment alignment) // Konvertiert ein Alignment in den LaTeX-Specifier (l, c oder r)
+    /// <summary>
+    /// Konvertiert ein Alignment in den entsprechenden LaTeX-Specifier (l, c oder r).
+    /// </summary>
+    /// <param name="alignment">Eines von LaTeXConverter.Alignment.center, LaTeXConverter.Alignment.left
+    /// oder LaTeXConverter.Alignment.right.</param>
+    /// <returns>Den char 'l', falls <paramref name="alignment"/>==LaTeXConverter.Alignment.left, 'r' falls
+    /// <paramref name="alignment"/>==LaTeXConverter.Alignment.right, 'c' sonst.</returns>
+    private static char GetAlignmentChar(Alignment alignment)
     {
         switch (alignment)
         {
