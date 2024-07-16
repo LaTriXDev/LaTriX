@@ -15,6 +15,31 @@ public static class LaTeXConverter
         column, row
     }
 
+    /// <summary>
+    /// Konvertiert die übergebene Matrix <paramref name="matrix"/> in einen LaTeX-Code, der diese anzeigen kann.
+    /// </summary>
+    /// <typeparam name="T">Ein Datentyp, aus dem eine MathNet.Numerics.LinearAlgebra.Matrix gebaut werden kann
+    /// (Double, Single, Complex, Complex32).</typeparam>
+    /// <param name="matrix">Die zu konvertierende Matrix.</param>
+    /// <param name="alignment">Anordnung der Matrixelemente. Eines von LaTeXConverter.Alignment.center (zentriert),
+    /// LaTeXConverter.Alignment.left (linksbündig) oder LaTeXConverter.Alignment.right (rechtsbündig).</param>
+    /// <returns>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um die
+    /// konvertierte Matrix anzuzeigen.</returns>
+    /// 
+    /// <remarks>
+    /// <para>
+    /// Der erzeugte LaTeX-Code besitzt keine eigene Kontrollsequenz zur Einleitung des Mathematikmodus. Der Code muss explizit im
+    /// Mathematikmodus eingefügt werden.
+    /// </para>
+    /// <para>
+    /// Aus Kompatibilitätsgründen (und da LaTeX diese ebenfalls standardmäßig als Dezimaltrennzeichen nutzt) wird als Trennzeichen
+    /// zwischen "Vorkommastellen" und "Nachkommastellen" der im englischen Sprachraum übliche Punkt genutzt.
+    /// </para>
+    /// <para>
+    /// Der erzeugte Code arbeitet mit der LaTeX-Kontrollsequenz <c>\begin{array}</c> statt <c>\begin{pmatrix}</c>, um auch ohne den Import
+    /// des amsmath-Moduls zu funktionieren.
+    /// </para>
+    /// </remarks>
     public static string ConvertMatrixToLaTeX<T>(Matrix<T> matrix, Alignment alignment=Alignment.center) where T : struct, IEquatable<T>, IFormattable
     /* Die Einschränkung des Typparameters T auf ein struct, das IEquatable<T> und IFormattable implementiert, ist wegen
     der internen Implementierung der `MathNet.Numerics.LinearAlgebra.Matrix`-Klasse zu nutzen, da nur aus solchen Typen Matrizen
