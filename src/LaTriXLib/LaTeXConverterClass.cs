@@ -4,6 +4,16 @@ using MathNet.Numerics.LinearAlgebra;
 
 namespace LaTriXLib;
 
+/// <summary>
+/// Die LaTeXConverter-Klasse.
+/// Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrizen und -Vektoren in einfügbaren
+/// LaTeX-Code.
+/// </summary>
+/// 
+/// <remarks>
+/// Im LaTeX-Dokument werden keine weiteren Bibliotheken zur Matrizen- und Vektoranzeige benötigt, der Code muss
+/// lediglich im Mathematikmodus eingefügt werden.
+/// </remarks>
 public static class LaTeXConverter
 {
     /// <summary>
