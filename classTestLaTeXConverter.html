@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LaTriX: TestLaTeXConverter Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LaTriX
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Softwareprojekt von Martin Wille und Anas Al Zoabi, um Matrizen und Vektoren aus der Math.NET Numerics Bibliothek in LaTeX-Code umzuwandeln.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="classTestLaTeXConverter-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">TestLaTeXConverter Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasse <code><a class="el" href="classTestLaTeXConverter.html" title="Klasse TestLaTeXConverter. Enthält integrierte Tests, um die Methoden der Klasse LaTeXConverter zu te...">TestLaTeXConverter</a></code>. Enthält integrierte Tests, um die Methoden der Klasse <code><a class="el" href="classLaTeXConverter.html" title="Die LaTeXConverter-Klasse. Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrize...">LaTeXConverter</a></code> zu testen.  
+ <a href="classTestLaTeXConverter.html#details">Mehr ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:ab391e370c6483b4e66ae36b566030d90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestLaTeXConverter.html#ab391e370c6483b4e66ae36b566030d90">TestConvertDoubleMatrixToLaTeX</a> (Matrix&lt; double &gt; matrix, string expected_string)</td></tr>
+<tr class="memdesc:ab391e370c6483b4e66ae36b566030d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ double dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code.  <a href="classTestLaTeXConverter.html#ab391e370c6483b4e66ae36b566030d90">Mehr ...</a><br /></td></tr>
+<tr class="separator:ab391e370c6483b4e66ae36b566030d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2240aa5d536a32466d89a30722bcf22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestLaTeXConverter.html#ac2240aa5d536a32466d89a30722bcf22">TestConvertFloatMatrixToLaTeX</a> (Matrix&lt; float &gt; matrix, string expected_string)</td></tr>
+<tr class="memdesc:ac2240aa5d536a32466d89a30722bcf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ float dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code.  <a href="classTestLaTeXConverter.html#ac2240aa5d536a32466d89a30722bcf22">Mehr ...</a><br /></td></tr>
+<tr class="separator:ac2240aa5d536a32466d89a30722bcf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75796f02bb845b0569f96e62329fa541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestLaTeXConverter.html#a75796f02bb845b0569f96e62329fa541">TestConvertVectorToLaTeX</a> (Vector&lt; double &gt; vector, <a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">LaTeXConverter.VectorType</a> vector_type, string expected_string)</td></tr>
+<tr class="memdesc:a75796f02bb845b0569f96e62329fa541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test, ob die Anwendung der <code>LaTeXConverter.ConvertVectorToLaTeX</code>-Methode auf einen Vektor vom Typ double dasselbe Ergebnis liefert wie die händische Übersetzung der Vektor-Repräsentation in LaTeX-Code.  <a href="classTestLaTeXConverter.html#a75796f02bb845b0569f96e62329fa541">Mehr ...</a><br /></td></tr>
+<tr class="separator:a75796f02bb845b0569f96e62329fa541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd42765f7854af24c7f30a23016c45c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestLaTeXConverter.html#aecd42765f7854af24c7f30a23016c45c">TestMatrixAlignment</a> (Matrix&lt; double &gt; matrix, <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">LaTeXConverter.Alignment</a> alignment, string expected_string)</td></tr>
+<tr class="memdesc:aecd42765f7854af24c7f30a23016c45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ double mit explizit genanntem alignment-Argument dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code mit entsprechenden Alignment-Specifiern.  <a href="classTestLaTeXConverter.html#aecd42765f7854af24c7f30a23016c45c">Mehr ...</a><br /></td></tr>
+<tr class="separator:aecd42765f7854af24c7f30a23016c45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Klasse <code><a class="el" href="classTestLaTeXConverter.html" title="Klasse TestLaTeXConverter. Enthält integrierte Tests, um die Methoden der Klasse LaTeXConverter zu te...">TestLaTeXConverter</a></code>. Enthält integrierte Tests, um die Methoden der Klasse <code><a class="el" href="classLaTeXConverter.html" title="Die LaTeXConverter-Klasse. Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrize...">LaTeXConverter</a></code> zu testen. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="UnitTestLaTeXConverter_8cs_source.html#l00105">105</a> der Datei <a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a>.</p>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="ab391e370c6483b4e66ae36b566030d90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab391e370c6483b4e66ae36b566030d90">&#9670;&nbsp;</a></span>TestConvertDoubleMatrixToLaTeX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TestLaTeXConverter.TestConvertDoubleMatrixToLaTeX </td>
+          <td>(</td>
+          <td class="paramtype">Matrix&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>expected_string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ double dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>Die zu konvertierende Testmatrix, vom Typ double.</td></tr>
+    <tr><td class="paramname">expected_string</td><td>Der erwartete String aus einer händischen Übersetzung.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Siehe auch</dt><dd><a class="el" href="classTestLaTeXConverter.html#ac2240aa5d536a32466d89a30722bcf22" title="Test, ob die Anwendung der LaTeXConverter.ConvertMatrixToLaTeX-Methode auf eine Matrix vom Typ float ...">TestConvertFloatMatrixToLaTeX(Matrix&lt;float&gt;, string)</a></dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="UnitTestLaTeXConverter_8cs_source.html#l00117">117</a> der Datei <a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a>.</p>
+
+</div>
+</div>
+<a id="ac2240aa5d536a32466d89a30722bcf22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2240aa5d536a32466d89a30722bcf22">&#9670;&nbsp;</a></span>TestConvertFloatMatrixToLaTeX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TestLaTeXConverter.TestConvertFloatMatrixToLaTeX </td>
+          <td>(</td>
+          <td class="paramtype">Matrix&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>expected_string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ float dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>Die zu konvertierende Testmatrix, vom Typ float.</td></tr>
+    <tr><td class="paramname">expected_string</td><td>Der erwartete String aus einer händischen Übersetzung.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Siehe auch</dt><dd><a class="el" href="classTestLaTeXConverter.html#ab391e370c6483b4e66ae36b566030d90" title="Test, ob die Anwendung der LaTeXConverter.ConvertMatrixToLaTeX-Methode auf eine Matrix vom Typ double...">TestConvertDoubleMatrixToLaTeX(Matrix&lt;double&gt;, string)</a></dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="UnitTestLaTeXConverter_8cs_source.html#l00133">133</a> der Datei <a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a>.</p>
+
+</div>
+</div>
+<a id="a75796f02bb845b0569f96e62329fa541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75796f02bb845b0569f96e62329fa541">&#9670;&nbsp;</a></span>TestConvertVectorToLaTeX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TestLaTeXConverter.TestConvertVectorToLaTeX </td>
+          <td>(</td>
+          <td class="paramtype">Vector&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">LaTeXConverter.VectorType</a>&#160;</td>
+          <td class="paramname"><em>vector_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>expected_string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test, ob die Anwendung der <code>LaTeXConverter.ConvertVectorToLaTeX</code>-Methode auf einen Vektor vom Typ double dasselbe Ergebnis liefert wie die händische Übersetzung der Vektor-Repräsentation in LaTeX-Code. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Der zu konvertierende Testvektor, vom Typ double.</td></tr>
+    <tr><td class="paramname">vector_type</td><td>Die Typinterpretation des Vektors, also ein Element des <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf" title="Ein Enum-Typ, der eine Typinterpretation eines Vektors repräsentiert.">LaTeXConverter.VectorType</a></code>-Enums (Spalten- oder Zeilenvektor).</td></tr>
+    <tr><td class="paramname">expected_string</td><td>Der erwartete String aus einer händischen Übersetzung.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="UnitTestLaTeXConverter_8cs_source.html#l00150">150</a> der Datei <a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a>.</p>
+
+</div>
+</div>
+<a id="aecd42765f7854af24c7f30a23016c45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd42765f7854af24c7f30a23016c45c">&#9670;&nbsp;</a></span>TestMatrixAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TestLaTeXConverter.TestMatrixAlignment </td>
+          <td>(</td>
+          <td class="paramtype">Matrix&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">LaTeXConverter.Alignment</a>&#160;</td>
+          <td class="paramname"><em>alignment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>expected_string</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test, ob die Anwendung der <code>LaTeXConverter.ConvertMatrixToLaTeX</code>-Methode auf eine Matrix vom Typ double mit explizit genanntem alignment-Argument dasselbe Ergebnis liefert wie die händische Übersetzung der Matrix-Repräsentation in LaTeX-Code mit entsprechenden Alignment-Specifiern. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>Die zu konvertierende Testmatrix, vom Typ double.</td></tr>
+    <tr><td class="paramname">expected_string</td><td>Der erwartete String aus einer händischen Übersetzung.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="UnitTestLaTeXConverter_8cs_source.html#l00165">165</a> der Datei <a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>src/LaTriXLibTests/<a class="el" href="UnitTestLaTeXConverter_8cs_source.html">UnitTestLaTeXConverter.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

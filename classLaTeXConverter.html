@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LaTriX: LaTeXConverter Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LaTriX
+   &#160;<span id="projectnumber">V1.0</span>
+   </div>
+   <div id="projectbrief">Softwareprojekt von Martin Wille und Anas Al Zoabi, um Matrizen und Vektoren aus der Math.NET Numerics Bibliothek in LaTeX-Code umzuwandeln.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Öffentliche Typen</a> &#124;
+<a href="#pub-static-methods">Öffentliche, statische Methoden</a> &#124;
+<a href="#pri-static-methods">Private, statische Methoden</a> &#124;
+<a href="classLaTeXConverter-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">LaTeXConverter Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Die <code><a class="el" href="classLaTeXConverter.html" title="Die LaTeXConverter-Klasse. Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrize...">LaTeXConverter</a></code>-Klasse. Enthält Methoden zur Konversion von <code>MathNet.Numerics.LinearAlgebra</code>-Matrizen und -Vektoren in einfügbaren LaTeX-Code.  
+ <a href="classLaTeXConverter.html#details">Mehr ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Öffentliche Typen</h2></td></tr>
+<tr class="memitem:aa3d17817384e8104bf1c441fcea15838"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a> { <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">left</a>
+, <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">center</a>
+, <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">right</a>
+ }</td></tr>
+<tr class="memdesc:aa3d17817384e8104bf1c441fcea15838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ein Enum-Typ, der eine Elementanordnung innerhalb einer Matrix/eines Vektors repräsentiert.  <a href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Mehr ...</a><br /></td></tr>
+<tr class="separator:aa3d17817384e8104bf1c441fcea15838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ab7f2b9324fecdf0c8f77ba77fd7cf"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">VectorType</a> { <a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">column</a>
+, <a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d">row</a>
+ }</td></tr>
+<tr class="memdesc:a77ab7f2b9324fecdf0c8f77ba77fd7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ein Enum-Typ, der eine Typinterpretation eines Vektors repräsentiert.  <a href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">Mehr ...</a><br /></td></tr>
+<tr class="separator:a77ab7f2b9324fecdf0c8f77ba77fd7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Öffentliche, statische Methoden</h2></td></tr>
+<tr class="memitem:abf72e226cef376c00f8834073a14b26b"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLaTeXConverter.html#abf72e226cef376c00f8834073a14b26b">ConvertMatrixToLaTeX&lt; T &gt;</a> (Matrix&lt; T &gt; matrix, <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a> alignment=<a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">Alignment.center</a>)</td></tr>
+<tr class="memdesc:abf72e226cef376c00f8834073a14b26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konvertiert die übergebene Matrix <em>matrix</em>  in einen LaTeX-Code, der diese anzeigen kann.  <a href="classLaTeXConverter.html#abf72e226cef376c00f8834073a14b26b">Mehr ...</a><br /></td></tr>
+<tr class="separator:abf72e226cef376c00f8834073a14b26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a3039671c8aad54a1a9fd7e34b284e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLaTeXConverter.html#ad6a3039671c8aad54a1a9fd7e34b284e">ConvertVectorToLaTeX&lt; T &gt;</a> (Vector&lt; T &gt; vector, <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a> alignment=<a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">Alignment.center</a>, <a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">VectorType</a> vector_type=<a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">VectorType.column</a>)</td></tr>
+<tr class="memdesc:ad6a3039671c8aad54a1a9fd7e34b284e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konvertiert den übergebenen Vektor <em>vector</em>  in einen LaTeX-Code, der diesen anzeigen kann.  <a href="classLaTeXConverter.html#ad6a3039671c8aad54a1a9fd7e34b284e">Mehr ...</a><br /></td></tr>
+<tr class="separator:ad6a3039671c8aad54a1a9fd7e34b284e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Private, statische Methoden</h2></td></tr>
+<tr class="memitem:a5ce96481a0448ee81d01be85bc45f830"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLaTeXConverter.html#a5ce96481a0448ee81d01be85bc45f830">GetAlignmentChar</a> (<a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a> alignment)</td></tr>
+<tr class="memdesc:a5ce96481a0448ee81d01be85bc45f830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konvertiert ein Alignment in den entsprechenden LaTeX-Specifier (l, c oder r).  <a href="classLaTeXConverter.html#a5ce96481a0448ee81d01be85bc45f830">Mehr ...</a><br /></td></tr>
+<tr class="separator:a5ce96481a0448ee81d01be85bc45f830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Die <code><a class="el" href="classLaTeXConverter.html" title="Die LaTeXConverter-Klasse. Enthält Methoden zur Konversion von MathNet.Numerics.LinearAlgebra-Matrize...">LaTeXConverter</a></code>-Klasse. Enthält Methoden zur Konversion von <code>MathNet.Numerics.LinearAlgebra</code>-Matrizen und -Vektoren in einfügbaren LaTeX-Code. </p>
+<p>Im LaTeX-Dokument werden keine weiteren Bibliotheken zur Matrizen- und Vektoranzeige benötigt, der Code muss lediglich im Mathematikmodus eingefügt werden. </p>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00017">17</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+</div><h2 class="groupheader">Dokumentation der Aufzählungstypen</h2>
+<a id="aa3d17817384e8104bf1c441fcea15838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d17817384e8104bf1c441fcea15838">&#9670;&nbsp;</a></span>Alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">LaTeXConverter.Alignment</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ein Enum-Typ, der eine Elementanordnung innerhalb einer Matrix/eines Vektors repräsentiert. </p>
+<p><code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">Alignment.left</a></code> steht dabei für linksbündige Ausrichtung, <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">Alignment.right</a></code> für rechtsbündige Ausrichtung sowie <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">Alignment.center</a></code> für zentrierte Elemente. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Aufzählungswerte</th></tr><tr><td class="fieldname"><a id="aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254"></a>left&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667"></a>center&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d"></a>right&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00027">27</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+
+</div>
+</div>
+<a id="a77ab7f2b9324fecdf0c8f77ba77fd7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ab7f2b9324fecdf0c8f77ba77fd7cf">&#9670;&nbsp;</a></span>VectorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">LaTeXConverter.VectorType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ein Enum-Typ, der eine Typinterpretation eines Vektors repräsentiert. </p>
+<p><code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">VectorType.column</a></code> steht dafür für eine Interpretation als Spaltenvektor, <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d">VectorType.row</a></code> für eine Interpretation als Zeilenvektor. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Aufzählungswerte</th></tr><tr><td class="fieldname"><a id="a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254"></a>column&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d"></a>row&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00040">40</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a id="abf72e226cef376c00f8834073a14b26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf72e226cef376c00f8834073a14b26b">&#9670;&nbsp;</a></span>ConvertMatrixToLaTeX&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string LaTeXConverter.ConvertMatrixToLaTeX&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Matrix&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a>&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">Alignment.center</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konvertiert die übergebene Matrix <em>matrix</em>  in einen LaTeX-Code, der diese anzeigen kann. </p>
+<dl class="tparams"><dt>Template-Parameter</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Ein Datentyp, aus dem eine <code>MathNet.Numerics.LinearAlgebra.Matrix</code> gebaut werden kann (Double, Single, Complex, Complex32).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>Die zu konvertierende Matrix.</td></tr>
+    <tr><td class="paramname">alignment</td><td>Anordnung der Matrixelemente. Eines von <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">LaTeXConverter.Alignment.center</a></code> (zentriert), <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">LaTeXConverter.Alignment.left</a></code> (linksbündig) oder <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">LaTeXConverter.Alignment.right</a></code> (rechtsbündig). Standardmäßig <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">LaTeXConverter.Alignment.center</a></code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um die konvertierte Matrix anzuzeigen.</dd></dl>
+<p>Der erzeugte LaTeX-Code besitzt keine eigene Kontrollsequenz zur Einleitung des Mathematikmodus. Der Code muss explizit im Mathematikmodus eingefügt werden. </p>
+<p>Aus Kompatibilitätsgründen (und da LaTeX diese ebenfalls standardmäßig als Dezimaltrennzeichen nutzt) wird als Trennzeichen zwischen "Vorkommastellen" und "Nachkommastellen" der im englischen Sprachraum übliche Punkt genutzt. </p>
+<p>Der erzeugte Code arbeitet mit der LaTeX-Kontrollsequenz <code>\begin{array}</code> statt <code>\begin{pmatrix}</code>, um auch ohne den Import des <code>amsmath</code>-Moduls zu funktionieren. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>struct</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IEquatable&lt;T&gt;</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IFormattable</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00071">71</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad6a3039671c8aad54a1a9fd7e34b284e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a3039671c8aad54a1a9fd7e34b284e">&#9670;&nbsp;</a></span>ConvertVectorToLaTeX&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string LaTeXConverter.ConvertVectorToLaTeX&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">Vector&lt; T &gt;&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a>&#160;</td>
+          <td class="paramname"><em>alignment</em> = <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">Alignment.center</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cf">VectorType</a>&#160;</td>
+          <td class="paramname"><em>vector_type</em> = <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">VectorType.column</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konvertiert den übergebenen Vektor <em>vector</em>  in einen LaTeX-Code, der diesen anzeigen kann. </p>
+<dl class="tparams"><dt>Template-Parameter</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Ein Datentyp, aus dem ein <code>MathNet.Numerics.LinearAlgebra.Vector</code> gebaut werden kann (Double, Single, Complex, Complex32).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>Der zu konvertierende Vektor.</td></tr>
+    <tr><td class="paramname">alignment</td><td>Anordnung der Vektorelemente. Eines von <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">LaTeXConverter.Alignment.center</a></code> (zentriert), <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">LaTeXConverter.Alignment.left</a></code> (linksbündig) oder <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">LaTeXConverter.Alignment.right</a></code> (rechtsbündig). Standardmäßig <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">LaTeXConverter.Alignment.center</a></code>.</td></tr>
+    <tr><td class="paramname">vector_type</td><td>Gibt an, ob der Vektor als Spalten- oder Zeilenvektor interpretiert werden soll. Eines von <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">LaTeXConverter.VectorType.column</a></code> oder <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d">LaTeXConverter.VectorType.row</a></code>. Standardmäßig <code><a class="el" href="classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfa1afd32818d1c9525f82aff4c09efd254">LaTeXConverter.VectorType.column</a></code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Ein LaTeX-Code, der direkt in ein LaTeX-Dokument (im Mathematikmodus!) eingefügt werden kann, um den konvertierten Vektor anzuzeigen.</dd></dl>
+<p>Der erzeugte LaTeX-Code besitzt keine eigene Kontrollsequenz zur Einleitung des Mathematikmodus. Der Code muss explizit im Mathematikmodus eingefügt werden. </p>
+<p>Aus Kompatibilitätsgründen (und da LaTeX diese ebenfalls standardmäßig als Dezimaltrennzeichen nutzt) wird als Trennzeichen zwischen "Vorkommastellen" und "Nachkommastellen" der im englischen Sprachraum übliche Punkt genutzt. </p>
+<p>Der erzeugte Code arbeitet mit der LaTeX-Kontrollsequenz <code>\begin{array}</code> statt <code>\begin{pmatrix}</code>, um auch ohne den Import des amsmath-Moduls zu funktionieren. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>struct</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IEquatable&lt;T&gt;</em></td><td>&#160;</td></tr>
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em>IFormattable</em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00123">123</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+
+</div>
+</div>
+<a id="a5ce96481a0448ee81d01be85bc45f830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce96481a0448ee81d01be85bc45f830">&#9670;&nbsp;</a></span>GetAlignmentChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char LaTeXConverter.GetAlignmentChar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838">Alignment</a>&#160;</td>
+          <td class="paramname"><em>alignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konvertiert ein Alignment in den entsprechenden LaTeX-Specifier (l, c oder r). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alignment</td><td>Eines von <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838aadb115059e28d960fa8badfac5516667">LaTeXConverter.Alignment.center</a></code>, <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">LaTeXConverter.Alignment.left</a></code> oder <code><a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">LaTeXConverter.Alignment.right</a></code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Den char 'l', falls <code>alignment==<a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254">LaTeXConverter.Alignment.left</a></code>, 'r' falls <code>alignment==<a class="el" href="classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d">LaTeXConverter.Alignment.right</a></code>, 'c' sonst.</dd></dl>
+
+<p class="definition">Definiert in Zeile <a class="el" href="LaTeXConverterClass_8cs_source.html#l00149">149</a> der Datei <a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>src/LaTriXLib/<a class="el" href="LaTeXConverterClass_8cs_source.html">LaTeXConverterClass.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
