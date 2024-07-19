@@ -6,7 +6,7 @@ Softwareprojekt von Martin Wille und Anas Al Zoabi, um Matrizen und Vektoren aus
 Installation per .NET-CLI:
 
 ```shell
-dotnet add package LaTriXLib --version 1.0.0
+dotnet add package LaTriXLib
 ```
 
 Zusätzliche Installationsdetails für Package Manager und ähnliche gibt es beim NuGet-Paket (https://www.nuget.org/packages/LaTriXLib/).
