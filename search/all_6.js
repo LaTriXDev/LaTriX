@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['initializecomponent_23',['InitializeComponent',['../classLaTriX_1_1Form1.html#a28e54ba8d8b7576d84d66ed8f8e72612',1,'LaTriX::Form1']]]
+  ['latexconverter_11',['LaTeXConverter',['../classLaTeXConverter.html',1,'']]],
+  ['latexconverterclass_2ecs_12',['LaTeXConverterClass.cs',['../LaTeXConverterClass_8cs.html',1,'']]],
+  ['latrix_20projekt_2e_13',['LaTrix Projekt.',['../index.html',1,'']]],
+  ['left_14',['left',['../classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a811882fecd5c7618d7099ebbd39ea254',1,'LaTeXConverter']]]
 ];

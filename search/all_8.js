@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_33',['Main',['../classLaTriX_1_1Program.html#a652fa2acf886e7181aa50806b65e2039',1,'LaTriX::Program']]],
-  ['mainform_5fload_34',['MainForm_Load',['../classLaTriX_1_1Form1.html#aee2b94290fb1e4c8ccae7d94217b721f',1,'LaTriX::Form1']]],
-  ['mainpage_2emd_35',['mainpage.md',['../mainpage_8md.html',1,'']]]
+  ['right_16',['right',['../classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d',1,'LaTeXConverter']]],
+  ['row_17',['row',['../classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d',1,'LaTeXConverter']]]
 ];

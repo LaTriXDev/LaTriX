@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['latexconverter_80',['LaTeXConverter',['../classLaTeXConverter.html',1,'']]]
+  ['latexconverter_31',['LaTeXConverter',['../classLaTeXConverter.html',1,'']]]
 ];
