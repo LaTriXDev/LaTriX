@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectortestdatagenerator_34',['VectorTestDataGenerator',['../classVectorTestDataGenerator.html',1,'']]]
+  ['resources_82',['Resources',['../classLaTriX_1_1Properties_1_1Resources.html',1,'LaTriX::Properties']]]
 ];
