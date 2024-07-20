@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MatrixLaTeXConverter.Properties
+namespace LaTriX.Properties
 {
 
 
