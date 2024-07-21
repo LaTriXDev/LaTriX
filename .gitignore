@@ -5,3 +5,4 @@ obj/
 # Automatisch generierte VSCode-Dateien
 .vs/
 .vscode/*
+*.user
