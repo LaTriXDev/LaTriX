@@ -2,16 +2,17 @@
 {
     partial class Form1
     {
+        /// <summary>
+        /// Erforderliche Designervariable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.DataGridView dataGridViewMatrix;
         private System.Windows.Forms.NumericUpDown numericUpDownRows;
         private System.Windows.Forms.NumericUpDown numericUpDownColumns;
         private System.Windows.Forms.TextBox textBoxLaTeXOutput;
-        private System.Windows.Forms.Label labelArrow;
         private System.Windows.Forms.Label columnsLabel;
         private System.Windows.Forms.Label Rows;
         private System.Windows.Forms.Label labelX;
-        private System.Windows.Forms.Label labelNachLatex;
         private System.Windows.Forms.ToolStrip toolStripMenu;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownAlignment;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCenter;
@@ -22,21 +23,20 @@
         private System.Windows.Forms.ToolTip toolTip;
 
         /// <summary>
-        /// Initialisiert die Form-Komponenten.
+        /// Erforderliche Methode für die Designerunterstützung.
         /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             dataGridViewMatrix = new System.Windows.Forms.DataGridView();
             numericUpDownRows = new System.Windows.Forms.NumericUpDown();
             numericUpDownColumns = new System.Windows.Forms.NumericUpDown();
             textBoxLaTeXOutput = new System.Windows.Forms.TextBox();
-            labelArrow = new System.Windows.Forms.Label();
             columnsLabel = new System.Windows.Forms.Label();
             Rows = new System.Windows.Forms.Label();
             labelX = new System.Windows.Forms.Label();
-            labelNachLatex = new System.Windows.Forms.Label();
             toolStripMenu = new System.Windows.Forms.ToolStrip();
             toolStripDropDownAlignment = new System.Windows.Forms.ToolStripDropDownButton();
             toolStripMenuItemCenter = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,17 +45,30 @@
             toolStripButtonCopy = new System.Windows.Forms.ToolStripButton();
             panelToolStrip = new System.Windows.Forms.Panel();
             toolTip = new System.Windows.Forms.ToolTip(components);
+            pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownRows).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownColumns).BeginInit();
             toolStripMenu.SuspendLayout();
             panelToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewMatrix
             // 
             dataGridViewMatrix.AllowUserToAddRows = false;
+            dataGridViewMatrix.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            dataGridViewMatrix.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewMatrix.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
             dataGridViewMatrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dataGridViewMatrix.DefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewMatrix.Location = new System.Drawing.Point(13, 195);
             dataGridViewMatrix.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             dataGridViewMatrix.Name = "dataGridViewMatrix";
@@ -63,6 +76,8 @@
             dataGridViewMatrix.Size = new System.Drawing.Size(586, 739);
             dataGridViewMatrix.TabIndex = 0;
             dataGridViewMatrix.CellValueChanged += dataGridViewMatrix_CellValueChanged;
+            dataGridViewMatrix.EditingControlShowing += dataGridViewMatrix_EditingControlShowing;
+            dataGridViewMatrix.SizeChanged += dataGridViewMatrix_SizeChanged;
             // 
             // numericUpDownRows
             // 
@@ -88,23 +103,17 @@
             // 
             // textBoxLaTeXOutput
             // 
-            textBoxLaTeXOutput.Location = new System.Drawing.Point(780, 212);
+            textBoxLaTeXOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            textBoxLaTeXOutput.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            textBoxLaTeXOutput.Font = new System.Drawing.Font("Segoe UI", 15F);
+            textBoxLaTeXOutput.Location = new System.Drawing.Point(780, 195);
             textBoxLaTeXOutput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             textBoxLaTeXOutput.Multiline = true;
             textBoxLaTeXOutput.Name = "textBoxLaTeXOutput";
-            textBoxLaTeXOutput.Size = new System.Drawing.Size(370, 738);
+            textBoxLaTeXOutput.ReadOnly = true;
+            textBoxLaTeXOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            textBoxLaTeXOutput.Size = new System.Drawing.Size(370, 739);
             textBoxLaTeXOutput.TabIndex = 4;
-            // 
-            // labelArrow
-            // 
-            labelArrow.AutoSize = true;
-            labelArrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            labelArrow.Location = new System.Drawing.Point(607, 579);
-            labelArrow.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelArrow.Name = "labelArrow";
-            labelArrow.Size = new System.Drawing.Size(150, 25);
-            labelArrow.TabIndex = 5;
-            labelArrow.Text = "------------------>";
             // 
             // columnsLabel
             // 
@@ -138,17 +147,6 @@
             labelX.Size = new System.Drawing.Size(21, 20);
             labelX.TabIndex = 8;
             labelX.Text = "X";
-            // 
-            // labelNachLatex
-            // 
-            labelNachLatex.AutoSize = true;
-            labelNachLatex.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            labelNachLatex.Location = new System.Drawing.Point(626, 554);
-            labelNachLatex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            labelNachLatex.Name = "labelNachLatex";
-            labelNachLatex.Size = new System.Drawing.Size(112, 20);
-            labelNachLatex.TabIndex = 9;
-            labelNachLatex.Text = "Nach LaTeX";
             // 
             // toolStripMenu
             // 
@@ -200,6 +198,7 @@
             // 
             // panelToolStrip
             // 
+            panelToolStrip.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             panelToolStrip.Controls.Add(toolStripMenu);
             panelToolStrip.Location = new System.Drawing.Point(780, 56);
             panelToolStrip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -207,17 +206,28 @@
             panelToolStrip.Size = new System.Drawing.Size(370, 86);
             panelToolStrip.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new System.Drawing.Point(606, 462);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(167, 148);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.ControlLight;
             ClientSize = new System.Drawing.Size(1163, 999);
+            Controls.Add(pictureBox1);
             Controls.Add(panelToolStrip);
-            Controls.Add(labelNachLatex);
             Controls.Add(labelX);
             Controls.Add(Rows);
             Controls.Add(columnsLabel);
-            Controls.Add(labelArrow);
             Controls.Add(textBoxLaTeXOutput);
             Controls.Add(numericUpDownColumns);
             Controls.Add(numericUpDownRows);
@@ -234,8 +244,11 @@
             toolStripMenu.PerformLayout();
             panelToolStrip.ResumeLayout(false);
             panelToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
