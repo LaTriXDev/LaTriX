@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['latexconverterclass_2ecs_91',['LaTeXConverterClass.cs',['../LaTeXConverterClass_8cs.html',1,'']]]
+  ['latexconverterclass_2ecs_94',['LaTeXConverterClass.cs',['../LaTeXConverterClass_8cs.html',1,'']]]
 ];
