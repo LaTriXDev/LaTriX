@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using MathNet.Numerics.LinearAlgebra;
 using LaTriXLib;
+using System.Globalization;
 
 namespace LaTriX
 {
@@ -201,7 +202,7 @@ namespace LaTriX
             {
                 for (int j = 0; j < dataGridViewMatrix.ColumnCount; j++)
                 {
-                    if (double.TryParse(dataGridViewMatrix[j, i].Value?.ToString(), out double value))
+                    if (double.TryParse(dataGridViewMatrix[j, i].Value?.ToString().Replace(',', '.'), NumberStyles.Any, CultureInfo.InvariantCulture, out double value))
                     {
                         matrix[i, j] = value;
                     }
@@ -209,7 +210,7 @@ namespace LaTriX
             }
 
             string latexCode = LaTeXConverter.ConvertMatrixToLaTeX(matrix, currentAlignment);
-            textBoxLaTeXOutput.Text = latexCode;
+            textBoxLaTeXOutput.Text = latexCode.Replace(",", ".");
         }
     }
 }
