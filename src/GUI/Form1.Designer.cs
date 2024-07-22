@@ -73,7 +73,7 @@
             dataGridViewMatrix.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             dataGridViewMatrix.Name = "dataGridViewMatrix";
             dataGridViewMatrix.RowHeadersWidth = 51;
-            dataGridViewMatrix.Size = new System.Drawing.Size(586, 739);
+            dataGridViewMatrix.Size = new System.Drawing.Size(605, 739);
             dataGridViewMatrix.TabIndex = 0;
             dataGridViewMatrix.CellValueChanged += dataGridViewMatrix_CellValueChanged;
             dataGridViewMatrix.EditingControlShowing += dataGridViewMatrix_EditingControlShowing;
@@ -106,7 +106,7 @@
             textBoxLaTeXOutput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             textBoxLaTeXOutput.BackColor = System.Drawing.SystemColors.InactiveCaption;
             textBoxLaTeXOutput.Font = new System.Drawing.Font("Segoe UI", 15F);
-            textBoxLaTeXOutput.Location = new System.Drawing.Point(780, 195);
+            textBoxLaTeXOutput.Location = new System.Drawing.Point(799, 195);
             textBoxLaTeXOutput.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             textBoxLaTeXOutput.Multiline = true;
             textBoxLaTeXOutput.Name = "textBoxLaTeXOutput";
@@ -200,7 +200,7 @@
             // 
             panelToolStrip.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             panelToolStrip.Controls.Add(toolStripMenu);
-            panelToolStrip.Location = new System.Drawing.Point(780, 56);
+            panelToolStrip.Location = new System.Drawing.Point(799, 56);
             panelToolStrip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             panelToolStrip.Name = "panelToolStrip";
             panelToolStrip.Size = new System.Drawing.Size(370, 86);
@@ -210,9 +210,9 @@
             // 
             pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new System.Drawing.Point(606, 462);
+            pictureBox1.Location = new System.Drawing.Point(625, 462);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(167, 148);
+            pictureBox1.Size = new System.Drawing.Size(167, 202);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
@@ -222,7 +222,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.ControlLight;
-            ClientSize = new System.Drawing.Size(1163, 999);
+            ClientSize = new System.Drawing.Size(1200, 1100);
             Controls.Add(pictureBox1);
             Controls.Add(panelToolStrip);
             Controls.Add(labelX);
@@ -236,6 +236,7 @@
             Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "LaTriX";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
             Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewMatrix).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownRows).EndInit();
