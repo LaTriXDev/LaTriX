@@ -5,10 +5,10 @@ using MathNet.Numerics.LinearAlgebra;
 using LaTriXLib;
 using System.Globalization;
 
-namespace LaTriX
+namespace LaTriXGUI
 {
     /// <summary>
-    /// Hauptformular für die LaTriX-Anwendung.
+    /// Hauptformular für die LaTriXGUI-Anwendung.
     /// </summary>
     public partial class Form1 : Form
     {

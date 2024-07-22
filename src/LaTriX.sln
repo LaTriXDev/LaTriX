@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaTriXLib", "LaTriXLib\LaTr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTriXLibTests", "LaTriXLibTests\LaTriXLibTests.csproj", "{C40B001F-B61F-40C4-8EF4-503239C6A976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTriX", "GUI\LaTriX.csproj", "{EDA895E0-5603-441D-AAF8-555C3881205F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaTriX", "GUI\LaTriXGUI.csproj", "{EDA895E0-5603-441D-AAF8-555C3881205F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

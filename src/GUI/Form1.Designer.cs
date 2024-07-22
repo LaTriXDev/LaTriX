@@ -1,4 +1,4 @@
-﻿namespace LaTriX
+﻿namespace LaTriXGUI
 {
     partial class Form1
     {
