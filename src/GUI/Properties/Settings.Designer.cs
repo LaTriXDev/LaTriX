@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LaTriX.Properties
+namespace LaTriXGUI.Properties
 {
 
 
