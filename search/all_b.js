@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['resourceculture_45',['resourceCulture',['../classLaTriX_1_1Properties_1_1Resources.html#a6e3d54ab14b4275fd83f8090e820e1de',1,'LaTriX::Properties::Resources']]],
-  ['resourceman_46',['resourceMan',['../classLaTriX_1_1Properties_1_1Resources.html#a20d4c9e207168f3546e13d9b25c64286',1,'LaTriX::Properties::Resources']]],
-  ['resourcemanager_47',['ResourceManager',['../classLaTriX_1_1Properties_1_1Resources.html#a42ce55c1baca6a5e38c1417aa0db4f59',1,'LaTriX::Properties::Resources']]],
-  ['resources_48',['Resources',['../classLaTriX_1_1Properties_1_1Resources.html',1,'LaTriX.Properties.Resources'],['../classLaTriX_1_1Properties_1_1Resources.html#a3cbe2da2ebaca52bd1309f306f06ee6f',1,'LaTriX.Properties.Resources.Resources()']]],
+  ['resourceculture_45',['resourceCulture',['../classLaTriXGUI_1_1Properties_1_1Resources.html#a29867fa5e65620dfc89f1be12a86ad06',1,'LaTriXGUI::Properties::Resources']]],
+  ['resourceman_46',['resourceMan',['../classLaTriXGUI_1_1Properties_1_1Resources.html#ab926a837ed620a346c12ede7dcda0719',1,'LaTriXGUI::Properties::Resources']]],
+  ['resourcemanager_47',['ResourceManager',['../classLaTriXGUI_1_1Properties_1_1Resources.html#af955097c411173abe6f53813c79dedc0',1,'LaTriXGUI::Properties::Resources']]],
+  ['resources_48',['Resources',['../classLaTriXGUI_1_1Properties_1_1Resources.html',1,'LaTriXGUI.Properties.Resources'],['../classLaTriXGUI_1_1Properties_1_1Resources.html#a51e2e2032759748368649d0ffc7d2ee7',1,'LaTriXGUI.Properties.Resources.Resources()']]],
   ['resources_2edesigner_2ecs_49',['Resources.Designer.cs',['../Resources_8Designer_8cs.html',1,'']]],
   ['right_50',['right',['../classLaTeXConverter.html#aa3d17817384e8104bf1c441fcea15838a7c4f29407893c334a6cb7a87bf045c0d',1,'LaTeXConverter']]],
   ['row_51',['row',['../classLaTeXConverter.html#a77ab7f2b9324fecdf0c8f77ba77fd7cfaf1965a857bc285d26fe22023aa5ab50d',1,'LaTeXConverter']]],
-  ['rowheights_52',['RowHeights',['../classLaTriX_1_1Form1.html#a5a7663c0929ded7ac5c871e768d24091',1,'LaTriX::Form1']]],
-  ['rows_53',['Rows',['../classLaTriX_1_1Form1.html#a2724a33bc813d9732746a2c3ce080f0b',1,'LaTriX::Form1']]]
+  ['rowheights_52',['RowHeights',['../classLaTriXGUI_1_1Form1.html#a17389e967ec1500e80e4b6fb5e252a69',1,'LaTriXGUI::Form1']]],
+  ['rows_53',['Rows',['../classLaTriXGUI_1_1Form1.html#aeff3336ad2887dbe5a2d55794ca85a04',1,'LaTriXGUI::Form1']]]
 ];

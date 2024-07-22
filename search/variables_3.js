@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['labelx_132',['labelX',['../classLaTriX_1_1Form1.html#ab4ea21d17dc3fd784eab517ed308bde4',1,'LaTriX::Form1']]]
+  ['labelx_132',['labelX',['../classLaTriXGUI_1_1Form1.html#a511554a61df6228bf590be4b6707bccc',1,'LaTriXGUI::Form1']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numericupdowncolumns_133',['numericUpDownColumns',['../classLaTriX_1_1Form1.html#a9ea0992547aeb54479a9e6bb6bf63624',1,'LaTriX::Form1']]],
-  ['numericupdownrows_134',['numericUpDownRows',['../classLaTriX_1_1Form1.html#a87a10147baf760061ed64b68b3fcba25',1,'LaTriX::Form1']]]
+  ['numericupdowncolumns_133',['numericUpDownColumns',['../classLaTriXGUI_1_1Form1.html#a3ecffb52a698b220dbea2b144b7a396b',1,'LaTriXGUI::Form1']]],
+  ['numericupdownrows_134',['numericUpDownRows',['../classLaTriXGUI_1_1Form1.html#af4134ea5658810c6fab3be3a35bb688b',1,'LaTriXGUI::Form1']]]
 ];
