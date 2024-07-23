@@ -3,6 +3,8 @@ Softwareprojekt von Martin Wille und Anas Al Zoabi, um Matrizen und Vektoren aus
 
 ## Installation
 
+### Installation von LaTriXLib
+
 Installation per .NET-CLI:
 
 ```shell
@@ -10,6 +12,10 @@ dotnet add package LaTriXLib
 ```
 
 Zusätzliche Installationsdetails für Package Manager und ähnliche gibt es beim NuGet-Paket (https://www.nuget.org/packages/LaTriXLib/).
+
+### Installation der LaTriXGUI (nur Windows)
+
+Die neuesten Releases der LaTriXGUI gibt es [hier](https://github.com/Supergecki/LaTriX/releases/). Bitte beachten Sie, dass LaTriXGUI momentan nur unter Windows-Systemen läuft. Die enthaltene .exe-Datei müssen Sie nun nur noch ausführen (ggf. ihrem Antiviren-Programm die Ausführung erlauben).
 
 ## Dokumentation
 
