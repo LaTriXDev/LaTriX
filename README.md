@@ -15,12 +15,12 @@ Zusätzliche Installationsdetails für Package Manager und ähnliche gibt es bei
 
 ### Installation der LaTriXGUI (nur Windows)
 
-Die neuesten Releases der LaTriXGUI gibt es [hier](https://github.com/Supergecki/LaTriX/releases/). Bitte beachten Sie, dass LaTriXGUI momentan nur unter Windows-Systemen läuft. Die enthaltene .exe-Datei müssen Sie nun nur noch ausführen (ggf. ihrem Antiviren-Programm die Ausführung erlauben).
+Die neuesten Releases der LaTriXGUI gibt es [hier](https://github.com/LaTriXDev/LaTriX/releases/). Bitte beachten Sie, dass LaTriXGUI momentan nur unter Windows-Systemen läuft. Die enthaltene .exe-Datei müssen Sie nun nur noch ausführen (ggf. ihrem Antiviren-Programm die Ausführung erlauben).
 
 ## Dokumentation
 
-Die LaTriX-Dokumentation befindet sich im Repository-eigenen Wiki (https://github.com/Supergecki/LaTriX/wiki). Auf der Startseite befindet sich zusätzlich eine Roadmap des Projekts.
+Die LaTriX-Dokumentation befindet sich im Repository-eigenen Wiki (https://github.com/LaTriXDev/LaTriX/wiki). Auf der Startseite befindet sich zusätzlich eine Roadmap des Projekts.
 
-Für ein Schritt-für-Schritt-Tutorial, siehe explizit https://github.com/Supergecki/LaTriX/wiki/Tutorial.
+Für ein Schritt-für-Schritt-Tutorial, siehe explizit https://github.com/LaTriXDev/LaTriX/wiki/Tutorial.
 
-Die vollständige Klassenreferenz ist unter https://supergecki.github.io/LaTriX/ zu finden. Einige kurze Anmerkungen dazu gibt es auch unter https://github.com/Supergecki/LaTriX/wiki/Klassenreferenz-und-FAQ.
+Die vollständige Klassenreferenz ist unter https://latrixdev.github.io/LaTriX/ zu finden. Einige kurze Anmerkungen dazu gibt es auch unter https://github.com/LaTriXDev/LaTriX/wiki/Klassenreferenz-und-FAQ.
